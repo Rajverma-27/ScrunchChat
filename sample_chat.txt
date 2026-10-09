@@ -1,0 +1,6 @@
+Alice: Hey team, we need to finalize the Q3 marketing plan.
+Bob: I can take care of the budget spreadsheet. TODO: create budget spreadsheet by tomorrow
+Charlie: Sounds good. I'll review the ad creatives. @Alice, can you send me the latest assets?
+Alice: Yes, I will send them over. ACTION: send assets to Charlie by EOD.
+Alice: Also, decided that we will use the new logo for all campaigns.
+Bob: Great. We should schedule a sync for Friday.

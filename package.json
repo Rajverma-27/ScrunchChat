@@ -1,0 +1,56 @@
+{
+  "name": "scrunch-chat",
+  "version": "1.0.0",
+  "description": "Scrunch Chat — AI-powered local-first chat summarizer that helps you conquer unread message overload.",
+  "main": "dist/electron/main.js",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"electron .\"",
+    "build": "vite build && tsc && electron-builder",
+    "start": "electron .",
+    "package": "electron-builder"
+  },
+  "dependencies": {
+    "@xenova/transformers": "^2.16.0",
+    "clsx": "^2.1.0",
+    "date-fns": "^3.6.0",
+    "dexie": "^3.2.7",
+    "lucide-react": "^0.368.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "tailwind-merge": "^2.2.2",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.75",
+    "@types/react-dom": "^18.2.24",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.4",
+    "vite": "^5.2.8"
+  },
+  "build": {
+    "appId": "com.scrunch.chat",
+    "productName": "Scrunch Chat",
+    "directories": {
+      "output": "dist-app"
+    },
+    "files": [
+      "dist/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "allowScripts": {
+    "electron@30.5.1": true,
+    "esbuild@0.21.5": true,
+    "protobufjs@6.11.6": true,
+    "sharp@0.32.6": true
+  }
+}
